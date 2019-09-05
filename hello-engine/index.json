@@ -1,0 +1,58 @@
+{
+  "title": "Connect to Engine",
+  "description": "Learn how to set up a websocket connection to Qlik Associative Engine",
+  "difficulty": "beginner",
+  "time": "2 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Prerequisites",
+        "text": "step1.md",
+        "courseData": "background.sh",
+        "code": "foreground.sh",
+        "verify": "step1-verify.sh"
+      },
+      {
+        "title": "Open a session against engine",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "docker-compose.yml",
+          "target": "/home/scrapbook/tutorial/example",
+          "chmod": "+x"
+        },
+        {
+          "file": "package.json",
+          "target": "/home/scrapbook/tutorial/example",
+          "chmod": "+x"
+        },
+        {
+          "file": "app.js",
+          "target": "/home/scrapbook/tutorial/example/hello-engine",
+          "chmod": "+x"
+        },
+        {
+          "file": "wait.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/home/scrapbook/tutorial/example/hello-engine"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

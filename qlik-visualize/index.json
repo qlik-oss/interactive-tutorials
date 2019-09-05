@@ -1,0 +1,52 @@
+{
+  "title": "Qlik-visualize",
+  "description": "test qlik-vis",
+  "difficulty": "beginner",
+  "time": "2 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Run Command",
+      "text": "step1.md"
+
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "files": [
+      "hello-data.js"
+  ],
+    "assets": {
+      "host01": [
+   
+        {"file": "docker-compose.yml", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},
+        {"file": "package.json", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},
+        {"file": "app.css", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},
+        {"file": "app.html", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},
+        {"file": "app.js", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},
+        {"file": "index.html", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},
+        {"file": "scatterplot.js", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},   
+        {"file": "linechart.js", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},      
+        {"file": "webpack.config.js", "target": "/home/scrapbook/tutorial/example", "chmod": "+x"},
+        {"file": "movies.csv", "target": "/home/scrapbook/tutorial/example/data", "chmod": "+x"}
+    
+        ]
+  }
+  },
+  "environment": {
+    "hidefinish": true,
+    "uilayout": "editor-terminal",
+    "uisettings": "javascript",
+    "uieditorpath": "/home/scrapbook/tutorial/example",
+    "showdashboard": true,
+    "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}, {"name": "Placeholder", "href": "https://[[HOST_SUBDOMAIN]]-19076-[[KATACODA_HOST]].environments.katacoda.com"}],
+    
+    "protocol": "http"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

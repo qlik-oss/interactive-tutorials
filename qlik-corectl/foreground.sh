@@ -1,0 +1,1 @@
+sleep 2; wait.sh; cd; cd /home/scrapbook/tutorial/example/corectl

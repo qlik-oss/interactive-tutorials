@@ -1,0 +1,1 @@
+sleep 1; wait.sh; cd; cd /home/scrapbook/tutorial/example/

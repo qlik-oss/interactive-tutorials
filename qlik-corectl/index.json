@@ -1,0 +1,122 @@
+{
+  "title": "Qlik corectl",
+  "description": "A tutorial learning how to setup Qlik corectl",
+  "details": {
+    "steps": [{
+        "title": "Setup QIX-engine",
+        "text": "step1.md",
+        "courseData": "background.sh",
+        "code": "foreground.sh"
+      },
+      {
+        "title": "Running corectl on your local machine",
+        "text": "step2.md"
+      },
+      {
+        "title": "Introduction",
+        "text": "step3.md"
+      },
+      {
+        "title": "Setup corectl",
+        "text": "step4.md"
+      },
+      {
+        "title": "Load data",
+        "text": "step5.md"
+      },
+      {
+        "title": "Catwalk",
+        "text": "step6.md"
+      },
+      {
+        "title": "Load data from a webpage",
+        "text": "step7.md"
+      },
+      {
+        "title": "Load multiple files",
+        "text": "step8.md"
+      },
+      {
+        "title": "Objects",
+        "text": "step9.md"
+      },
+      {
+        "title": "Bonus step: visualization",
+        "text": "step10.md"
+      }
+
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "files": [
+      "hello-data.js"
+    ],
+    "assets": {
+      "host01": [{
+          "file": "wait.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        },
+        {
+          "file": "docker-compose.yml",
+          "target": "/home/scrapbook/tutorial/example",
+          "chmod": "+x"
+        },
+        {
+          "file": "installdep.sh",
+          "target": "/home/scrapbook/tutorial/example",
+          "chmod": "+x"
+        },
+        {
+          "file": "webpack.config.js",
+          "target": "/home/scrapbook/tutorial/example",
+          "chmod": "+x"
+        },
+        {
+          "file": "movies.csv",
+          "target": "/home/scrapbook/tutorial/example/corectl/data",
+          "chmod": "+x"
+        },
+        {
+          "file": "corectl-object.json",
+          "target": "/home/scrapbook/tutorial/example/corectl",
+          "chmod": "+x"
+        },
+        {
+          "file": "package.json",
+          "target": "/home/scrapbook/tutorial/example",
+          "chmod": "+x"
+        },
+        {
+          "file": "testscript.qvs",
+          "target": "/home/scrapbook/tutorial/example/corectl",
+          "chmod": "+x"
+        },
+        {
+          "file": "corectl.yml",
+          "target": "/home/scrapbook/tutorial/example/corectl",
+          "chmod": "+x"
+        },
+        {
+          "file": "index.html",
+          "target": "/home/scrapbook/tutorial/example/corectl",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "hidefinish": true,
+    "uilayout": "editor-terminal",
+    "uisettings": "javascript",
+    "uieditorpath": "/home/scrapbook/tutorial/example/corectl"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

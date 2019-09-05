@@ -1,0 +1,26 @@
+{
+  "name": "core-get-started",
+  "version": "0.0.1",
+  "description": "Examples on basic usage of QIX Engine running in a Docker container.",
+  "author": "QlikTech International AB",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "node hello-data/app.js"
+  },
+  "dependencies": {
+    "enigma.js": "2.4.0",
+    "ws": "7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "babel-loader": "8.0.6",
+    "babel-plugin-istanbul": "5.1.4",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=8.9.3"
+  }
+}

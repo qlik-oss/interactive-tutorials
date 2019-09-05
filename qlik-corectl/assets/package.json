@@ -1,0 +1,20 @@
+{
+  "name": "core-get-started",
+  "version": "0.0.1",
+  "description": "Examples on basic usage of QIX Engine running in a Docker container.",
+  "author": "QlikTech International AB",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "print-movies": "node ./corectl/app.js",
+    "barchart": "webpack-dev-server --config webpack.config.js"
+  },
+  "dependencies": {
+    "enigma.js": "2.4.0",
+    "ws": "7.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=8.9.3"
+  }
+}

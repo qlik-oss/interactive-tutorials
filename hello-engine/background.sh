@@ -1,0 +1,1 @@
+sleep 1; cd ../home/scrapbook/tutorial/example/; npm install; echo "done" >> /root/katacoda-background-finished

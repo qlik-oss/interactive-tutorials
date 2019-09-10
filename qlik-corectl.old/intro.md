@@ -10,4 +10,4 @@ In this tutorial you will learn how to: <br>
 <br>
 <br>
 <br>                                                               
-![corectl](assets/corectl-logo.png)
+![Analysis](assets/corectl-logo.png)

@@ -4,7 +4,7 @@ We need to adjust two things when we are changing the data type:
 1. The corectl.yml file so that the connection point at the URL where our data is.
 We will use the info about the movies  from this [url](https://gist.githubusercontent.com/carlioth/b86ede12e75b5756c9f34c0d65a22bb3/raw/e733b74c7c1c5494669b36893a31de5427b7b4fc/MovieInfo.csv).
 
-2. Change the load script so it loads html instead of text.(We always need to change the load script when loading different files)
+2. Change the loadscript so it loads html instead of text.(We always need to change the loadscript when loading different files)
 
 **Exercise:** Change the corectl.yml file so it connects to the url: https://gist.githubusercontent.com/carlioth/b86ede12e75b5756c9f34c0d65a22bb3/raw/e733b74c7c1c5494669b36893a31de5427b7b4fc/MovieInfo.csv
 
@@ -57,3 +57,6 @@ Analyze the data with the same commands we used before:
 
 `corectl values <field name>` - Displays the values in the specific field
 <br>
+
+
+

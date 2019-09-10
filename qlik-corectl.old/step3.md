@@ -6,8 +6,9 @@ Here is flowchart to give you a feeling how corectl works:
 ![Concept](assets/corectl-concept.png)
 
 
-In this tutorial we will walk you through how to use Qlik Core, there are basically four steps in this tutorial:
+In this tutorial we will walk you through how to use qlikcore, there are basically four steps in this tutorial:
 1.	Setting up a session against engine and an app to communicate with. 
 2.	Then load data into the app.
 3.	With data loaded engine powerful inbuilt data analyzing tools will be used to study  associations, structure, etc within the loaded data.
-4.	Then as a bonus step you will learn how you can integrate Qlik Core and JavaScript to create visualizations 
+4.	Then as a bonus step you will learn how you can integrate qlikcore and JavaScript to create visualizations 
+

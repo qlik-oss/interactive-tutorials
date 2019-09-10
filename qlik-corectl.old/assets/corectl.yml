@@ -1,0 +1,5 @@
+# TODO: Create config file 
+# Step 1. Define URL and port to running Qlik Associative Engine instance
+# Step 2 App name that the tool should open a session against.
+# Step 3. Set up a data loading script 
+# Step 4. Add a object

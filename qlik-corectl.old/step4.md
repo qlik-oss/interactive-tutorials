@@ -1,5 +1,5 @@
 
-**Tip:** You can always run `corectl`{{execute}} in the terminal window to see corectl´s CLI commands. 
+**Tip:** You can always run `corectl`{{execute}} in the terminal window to see corectls CLI commands. 
 
 ## 1. corectl build
 In order to use corectl tools you need to build/load an app. Use the cli command `corectl build` to builds (or rebuild) apps. <br>
@@ -78,3 +78,4 @@ To use the same setup as in the config file we must use the flags:
 
 Something like this: <br>
 `corectl build -e "localhost:19076" -a "myapp"`{{execute}}
+

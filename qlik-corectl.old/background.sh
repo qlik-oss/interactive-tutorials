@@ -1,0 +1,1 @@
+sleep 2; cd ../home/scrapbook/tutorial/example/; npm install; curl --silent --location "https://github.com/qlik-oss/corectl/releases/latest/download/corectl-Linux-x86_64.tar.gz" | tar xz -C /tmp && mv /tmp/corectl /usr/bin/corectl; cd ~/; echo 'if [ $(which corectl) ]; then . <(corectl completion bash); fi' >> .bashrc; sleep 1;  echo "done" >> /root/katacoda-background-finished

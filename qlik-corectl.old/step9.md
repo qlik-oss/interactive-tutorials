@@ -56,3 +56,73 @@ This seem to be correct since our initial data fetch in the `corectl-object.json
 <br>
 
 `corectl object layout MyObject`{{execute}} - Display the layout. Which is the entire object with the data included (this is the object you use when want to get your data into visualization models).
+
+<br> 
+
+## Using corectl and javascript
+
+When looking at the layout object we can see that our 5 movies is stored in qHyperCube -> qDataPages -> qMatrix
+We could actually use this path from the layout to print the movies in a javascript file. For example by re-write the app used in the [load data core tutorial](https://github.com/qlik-oss/core-get-started/blob/master/src/hello-data/hello-data.js) to load the settings from corectl.
+<br>
+
+First create a javascript file: `touch app.js`{{execute}}
+<br>
+
+**Exercise** Open `app.js`{{open}} and copy the code from the gitHub repo. 
+Then re-write the code so it opens our app and our objective instead. 
+Last print the information in `layout.qHyperCube.qDataPages[0].qMatrix`.
+
+
+<details> <summary>Show solution</summary>
+<p> 
+
+<pre class="file" data-filename="app.js" data-target="replace">
+/* eslint no-console:0 */
+const WebSocket = require('ws');
+const enigma = require('enigma.js');
+const schema = require('enigma.js/schemas/3.2.json');
+
+(async () => {
+  try {
+    console.log('Setting up session.');
+    const session = enigma.create({
+      schema,
+      url: 'ws://localhost:19076/app/',
+      createSocket: url => new WebSocket(url),
+    });
+  
+    const qix = await session.open();
+    
+    // Add 'myapp' to the session
+    const app = await qix.openDoc('myapp');
+    
+    // Include the object in the app
+    const object = await app.getObject('MyObject');
+    
+    // Return layout of the object
+    const layout = await object.getLayout();
+
+    // Fetch the data from the hypercube 
+    const movies = layout.qHyperCube.qDataPages[0].qMatrix; 
+
+    console.log('Listing the movies:');
+    movies.forEach((movie) => { console.log(movie[0].qText); });
+
+    await session.close();
+    console.log('Session closed.');
+  } catch (err) {
+    console.log('Whoops! An error occurred.', err);
+    process.exit(1);
+  }
+})();
+</pre>
+
+</details>
+</p> 
+
+To run this script use:`npm run print-movies`{{execute}}
+<br>
+
+And the five movies should be printed!
+
+

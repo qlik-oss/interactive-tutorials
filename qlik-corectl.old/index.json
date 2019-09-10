@@ -25,7 +25,7 @@
         "text": "step5.md"
       },
       {
-        "title": "catwalk",
+        "title": "Catwalk",
         "text": "step6.md"
       },
       {
@@ -39,7 +39,12 @@
       {
         "title": "Objects",
         "text": "step9.md"
+      },
+      {
+        "title": "Bonus step: visualization",
+        "text": "step10.md"
       }
+
     ],
     "intro": {
       "text": "intro.md",

@@ -28,7 +28,7 @@ connections: # Connections that should be created in the app
 <details> <summary>Show solution</summary>
 <p> 
 
-We already have the load scripts for both these files ready so we just merge both script files to one. Let’s append the Movies load script to the `testscript.qvs`{{open}}:
+We already have the load scripts for both these files ready so we just merge both script files to one. Let’s append the Movies loadscript to the `testscript.qvs`{{open}}:
 
 <pre class="file" data-filename="testscript.qvs" data-target="append">
 Movies:
@@ -55,3 +55,5 @@ As you can see we now have relation in within our tables. Catwalk will automatic
 <br>
 
 You can see the associations between tables with: `corectl assoc`{{execute}}
+
+

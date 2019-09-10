@@ -1,0 +1,1 @@
+npm i -D @babel/core @babel/preset-env babel-loader babel-plugin-istanbul copy-webpack-plugin webpack-cli json-loader raw-loader webpack webpack-dev-server; npm i babel-polyfill picasso-plugin-q picasso.js
